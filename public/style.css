@@ -1,0 +1,20 @@
+
+article {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    font-size: small;
+    color: white;
+}
+
+img {
+    width: 1em;
+    height: auto;
+}
