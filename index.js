@@ -14,7 +14,6 @@ try {
 }
 console.log(data)
 
-
 // Maak een nieuwe express app aan
 const app = express()
 

@@ -1,23 +1,50 @@
 <%- include('./partials/head') %>
 
-    <main>
-        <h1>
-            <%= squad.name %>
-        </h1>
-        <section>
-            <% squad.members.forEach(member=> { %>
-                <article>
-                    <h2>
-                        <%= member.name %>
-                    </h2>
-                    <% if (member.avatar) { %>
-                        <img src="<%= member.avatar %>" alt="de avatar van <%= member.name %>" />
-                        <% }else{ %>
-                            <img src="smiley.png" alt="" />
-                            <% } %>
-                </article>
+    <% const colors=[ 'red' ,'blue', 'green' , ]; const timer=[ '-0.25s' ,'-0.5s', '-0.75s' , '-1s' ,'-1.25s'
+        ,'-1.5s', '-1.75s' , '-2 s' , '-2.25s' ,'-2.5s', '-2.75s' , '-3s' ,'-3.25s' ,'-3.5s', '-3.75s' , '-4 s' ,]
+        function fakeHeight(min, max) { return Math.random() * (1.90 - 1.50) + 1.50;} %>
+        <main>
+            <section>
+                <% squad.members.forEach(member=> { %>
+                    <div>
+                        <article style="
+                                --bg-color: <%= colors[Math.floor(Math.random()*colors.length)] %>; 
+                                --timer: <%= timer[Math.floor(Math.random()*timer.length)]%>;
+                                --height: <%= fakeHeight() %>
+                            ">
+                            <h2>
+                                <%= member.name %>
+                            </h2>
+                            <% if (member.avatar) { %>
+                                <img src="<%= member.avatar %>" alt="de avatar van <%= member.name %>" />
+                                <% } else{ %>
+                                    <img src="smiley.png" alt="" />
+                                    <% } %>
+                        </article>
+                    </div>
+                    <% }) %>
 
-                <% }) %>
-        </section>
-    </main>
-    <%- include('./partials/foot') %>
+            </section>
+
+            <nav>
+                <button class="freeze" title="freeze animation">Freeze</button>
+                <ul>
+                    <% squad.members.forEach(member=> { %>
+                        <li>
+                            <% if (member.avatar) { %>
+                                <img src="<%= member.avatar %>" alt="de avatar van <%= member.name %>" />
+                                <% } else{ %>
+                                    <img src="smiley.png" alt="" />
+                                    <% } %>
+                                        <h2>
+                                            <%= member.name %>
+                                        </h2>
+                        </li>
+
+                        <% }) %>
+                </ul>
+
+            </nav>
+
+        </main>
+        <%- include('./partials/foot') %>
