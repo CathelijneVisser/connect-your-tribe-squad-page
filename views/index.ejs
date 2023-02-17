@@ -8,7 +8,7 @@
                 <% squad.members.forEach(member=> { %>
                     <div>
                         <a href="<%= member.website %>" target="blank">
-                            <article style="
+                            <article id="<%=member.slug %>" style="
                                     --bg-color: <%= colors[Math.floor(Math.random()*colors.length)] %>; 
                                     --timer: <%= timer[Math.floor(Math.random()*timer.length)]%>;
                                     --height: <%= fakeHeight() %>
@@ -31,16 +31,18 @@
             <nav>
                 <button class="freeze" title="freeze animation">Freeze</button>
                 <ul>
-                    <% squad.members.forEach(member=> { %>  
+                    <% squad.members.forEach(member=> { %>
                         <li>
-                            <% if (member.avatar) { %>
-                                <img src="<%= member.avatar %>" alt="de avatar van <%= member.name %>" />
-                                <% } else{ %>
-                                    <img src="smiley.png" alt="" />
-                                    <% } %>
-                                        <h2>
-                                            <%= member.name %>
-                                        </h2>
+                            <a href="#<%= member.slug %>">
+                                <% if (member.avatar) { %>
+                                    <img src="<%= member.avatar %>" alt="de avatar van <%= member.name %>" />
+                                    <% } else{ %>
+                                        <img src="smiley.png" alt="" />
+                                        <% } %>
+                                            <h2>
+                                                <%= member.name %>
+                                            </h2>
+                            </a>
                         </li>
                         <% }) %>
                 </ul>

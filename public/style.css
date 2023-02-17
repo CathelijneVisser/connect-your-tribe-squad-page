@@ -38,7 +38,7 @@ article {
     left: -50%;
 }
 
-article:focus {
+article:target {
     background-color: yellow;
 }
 
@@ -90,9 +90,14 @@ button {
 li {
     display: flex;
     padding: .5em;
-    font-size: larger;
 }
 
 li img {
     padding-right: 1em;
+    width: 2em;
+    height: auto;
+}
+
+li h2 {
+    font-size: larger;
 }
