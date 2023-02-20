@@ -6,13 +6,16 @@ main {
     padding-left: 40px;
     display: flex;
     justify-content: flex-end;
+    font-family: sans-serif ;
+    max-height: 100vh;
+    overflow-y: hidden;
 }
 
 section{
     display: flex;
     align-items: flex-end;
-    height: 100vh;
-    flex: 1 0 90%;
+    height: 100%;
+    flex: 1 0 85%;
 }
 section > div {
     flex: 1 1 auto;
@@ -29,22 +32,24 @@ article {
     display: flex;
     flex-direction: column;
     margin: .5em;
-    animation: 4s infinite;
-    animation-name: stuiteren;
+    animation: calc(4s * var(--height) * var(--slider)) infinite;
+    animation-name: bounce;
     animation-delay: var(--timer);
     animation-direction: alternate;
     position: absolute;
     bottom: 0;
     left: -50%;
+    color: white;
 }
 
 article:target {
     background-color: yellow;
+    color: black;
 }
 
 h2 {
     font-size: small;
-    color: white;
+    color: inherit;
 }
 
 img {
@@ -56,38 +61,58 @@ article.pause {
     animation-play-state: paused;
 }
 
-@keyframes stuiteren {
+@keyframes bounce {
     0% {
        transform: translate(0);
     }
     50% {
-        transform: translateY(var(30em));
+        transform: translateY(calc(50vh + (var(--height) * 10vh)));
     }
     100% {
-        transform: translateY(-30em);
-    }
+        transform: translateY(calc(-1 * (50vh + (var(--height) * 15vh))));
+    }   
 }
 
 nav {
     background-color: rgb(0, 0, 0, 0.7)  ;
     z-index: 5;
-    flex: 0 1 20%;
+    flex: 0 1 30%;
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-direction: column; 
+    overflow-y: scroll;  
 }    
 
-button {
+button, .filter {
     height: fit-content;
     width: fit-content;
     background-color: white;
     border-radius: 5em;
     margin: .5em;
+    padding: .5em;
     border: none;  
     cursor: pointer;
+    font-size: medium;
 }    
 
+.filter {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 li {
+    list-style-type: none;
+}
+
+li a{
     display: flex;
     padding: .5em;
 }
