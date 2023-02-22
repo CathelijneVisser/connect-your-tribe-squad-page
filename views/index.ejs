@@ -7,15 +7,12 @@
             <section>
                 <% squad.members.forEach(member=> { %>
                     <div>
-                        <a href="
-                        <%= member.website
-                        // if (member.website.includes(" https:/")){ member.website } else { http:/ member.website } %>
-                            " target="blank">
+                        <a href="<%= member.website %>" target="blank">
+
                             <article id="<%=member.slug %>" style="
                                     --bg-color: <%= colors[Math.floor(Math.random()*colors.length)] %>; 
                                     --timer: <%= timer[Math.floor(Math.random()*timer.length)]%>;
-                                    --height: <%= fakeHeight();
-                                    --slider: var output = document.getElementById(" value"); %>
+                                    --height: <%= fakeHeight();%>
                                 ">
                                 <h2>
                                     <%= member.name %>
