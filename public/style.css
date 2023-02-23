@@ -20,6 +20,7 @@ section{
 section > div {
     flex: 1 1 auto;
     position: relative;
+    justify-content: flex-end;
 }
 
 article {
