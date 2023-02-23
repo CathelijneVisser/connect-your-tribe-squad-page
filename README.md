@@ -13,7 +13,7 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+Mijn site heeft de drie squads in stuiterballen staan. De stuiterballen krijgen random een van de drie kleuren toegewezen. De stuiterballen stuiteren zo hoog als dat de persoon erin lang is.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
@@ -22,6 +22,7 @@
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+Je moet eerste node instaleren, ik heb zelf 
 
 ## Gebruik
 
