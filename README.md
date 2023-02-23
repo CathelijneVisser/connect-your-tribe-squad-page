@@ -22,11 +22,15 @@ Mijn site heeft de drie squads in stuiterballen staan. De stuiterballen krijgen 
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
-Je moet eerste node instaleren, ik heb zelf 
+Je moet eerste node instaleren, ik heb zelf versie 18.14.0 gebruikt.  Bij de eerste keer opstarten moet je in de terminal npm install uitvoeren, en daarna kan je elke keer npm start gebruikt om een live server te maken.
 
 ## Gebruik
+Je kan deze site gebruiken om te zien wie in in het leerjaar 2022-2023 van fdnd zit, en in welke squads ze zitten. Als je op een van de mensen in het menu rechts klikt wordt het balletje van dat persoon geel. 
 
 ## Bronnen
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+https://ejs.co/
+https://dev.to/pszponder/control-flow-in-javascript-loops-26bd
 
 ## Licentie
 
