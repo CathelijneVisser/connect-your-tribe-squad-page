@@ -1,3 +1,7 @@
+"scripts": {
+                "start":  "node index.js"
+}
+
 {
   "name": "connect-your-tribe-squad-page",
   "version": "1.0.0",
