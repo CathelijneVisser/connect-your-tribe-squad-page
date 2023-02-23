@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+# Squad page
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
@@ -19,6 +19,13 @@ Mijn site heeft de drie squads in stuiterballen staan. De stuiterballen krijgen 
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Ik heb voor dit project node, EJS en express gebruikt. 
+
+Node is een framework waardoor je server-site javascript kan gebruiken. Hierdoor kun je makkelijk informatie in de server ophalen en doorsturen. 
+
+EJS zorgt er voor dat we javascript en html overzichtelijk in het zelfde bestand kunnen gebruiken. 
+
+Express is een framework dat ervoor zorgt dat je makelijker met een api in node kan werken. Express is goed om te gebruiken voo roruting en https requesten. 
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
