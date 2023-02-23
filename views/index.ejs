@@ -1,20 +1,21 @@
 <%- include('./partials/head') %>
 
     <% const colors=[ 'hotpink' ,'rebeccapurple', 'teal' ]; const timer=[ '-0.25s' ,'-0.5s', '-0.75s' , '-1s' ,'-1.25s'
-        ,'-1.5s', '-1.75s' , '-2 s' , '-2.25s' ,'-2.5s', '-2.75s' , '-3s' ,'-3.25s' ,'-3.5s', '-3.75s' , '-4 s' ,]
+        ,'-1.5s', '-1.75s' , '-2 s' , '-2.25s' ,'-2.5s', '-2.75s' , '-3s' ,'-3.25s' ,'-3.5s', '-3.75s' , '-4 s' ,];
         function fakeHeight(min, max) { return Math.random() * (1.90 - 1.50) + 1.50;}%>
         <main>
             <section>
                 <% squad.members.forEach(member=> { %>
                     <div>
-                        <a href="<%= member.website %>" target="blank">
+                        <a href="<% if (member.website && !member.website.includes('https://')){ %>https://<% } %><%= member.website %>"
+                            target="blank">
 
                             <article id="<%=member.slug %>" style="
-                                    --bg-color: <%= colors[Math.floor(Math.random()*colors.length)] %>; 
-                                    --timer: <%= timer[Math.floor(Math.random()*timer.length)]%>;
-                                    --height: <%= fakeHeight();%>
-                                    
-                                ">
+                                        --bg-color: <%= colors[Math.floor(Math.random()*colors.length)] %>; 
+                                        --timer: <%= timer[Math.floor(Math.random()*timer.length)]%>;
+                                        --height: <%= fakeHeight();%>
+                                        
+                                    ">
                                 <h2>
                                     <%= member.name %>
                                 </h2>
@@ -35,10 +36,6 @@
                 <a class="filter" href="/?squad=squad-b-2022">Squad B</a>
                 <a class="filter" href="/?squad=squat-c-2022">Squad C</a>
                 <button class="freeze" title="freeze animation">Freeze</button>
-                <!-- <div class="slidecontainer">
-                    <input type="range" min="1" max="8" value="4" step="1" class="slider" id="myRange">
-
-                </div> -->
 
 
                 <ul>
