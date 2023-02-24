@@ -14,6 +14,8 @@
 Mijn site heeft de drie squads in stuiterballen staan. De stuiterballen krijgen random een van de drie kleuren toegewezen. De stuiterballen stuiteren zo hoog als dat de persoon erin lang is.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+![mobile](https://user-images.githubusercontent.com/112855711/221167976-48c0edd2-960c-43a9-b813-b56daa4dd26c.gif)
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
